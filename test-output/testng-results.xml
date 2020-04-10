@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-04-10T12:13:55Z" name="Default suite" finished-at="2020-04-10T12:14:18Z" duration-ms="22529">
+    <groups>
+    </groups>
+    <test started-at="2020-04-10T12:13:55Z" name="Default test" finished-at="2020-04-10T12:14:18Z" duration-ms="22529">
+      <class name="Test.TestFlow">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test.TestFlow@78d6692f]" started-at="2020-04-10T12:13:37Z" name="setup" finished-at="2020-04-10T12:13:55Z" duration-ms="17775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginflow()[pri:0, instance:Test.TestFlow@78d6692f]" started-at="2020-04-10T12:13:55Z" name="loginflow" finished-at="2020-04-10T12:14:05Z" duration-ms="10048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginflow -->
+        <test-method is-config="true" signature="loaddatafile()[pri:0, instance:Test.TestFlow@78d6692f]" started-at="2020-04-10T12:13:55Z" name="loaddatafile" finished-at="2020-04-10T12:13:55Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loaddatafile -->
+        <test-method is-config="true" signature="loaddatafile()[pri:0, instance:Test.TestFlow@78d6692f]" started-at="2020-04-10T12:14:05Z" name="loaddatafile" finished-at="2020-04-10T12:14:05Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loaddatafile -->
+        <test-method signature="searchItem()[pri:0, instance:Test.TestFlow@78d6692f]" started-at="2020-04-10T12:14:05Z" name="searchItem" finished-at="2020-04-10T12:14:18Z" duration-ms="12459" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[The element 'By.xpath: //*[@resource-id="com.amazon.mShop.android.shopping:id/rs_search_src_text"]' does not exist in DOM anymore
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'OCSIPL-AKK204', ip: '192.168.8.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.5'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: F:/Gitcode/AppiumInfosysDem..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: uiautomator2, databaseEnabled: false, desired: {app: F:/Gitcode/AppiumInfosysDem..., appActivity: com.amazon.mShop.splashscre..., automationName: uiautomator2, deviceName: ZF62243G98, newCommandTimeout: 60, platformName: android, platformVersion: 10}, deviceApiLevel: 29, deviceManufacturer: motorola, deviceModel: motorola one power, deviceName: ZF62243G98, deviceScreenDensity: 480, deviceScreenSize: 1080x2246, deviceUDID: ZF62243G98, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 3, platform: LINUX, platformName: LINUX, platformVersion: 10, statBarHeight: 86, takesScreenshot: true, viewportRect: {height: 1930, left: 0, top: 86, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 28f40f2f-cf6e-4a13-9221-1e53ac999570]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element 'By.xpath: //*[@resource-id="com.amazon.mShop.android.shopping:id/rs_search_src_text"]' does not exist in DOM anymore
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'OCSIPL-AKK204', ip: '192.168.8.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.5'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: F:/Gitcode/AppiumInfosysDem..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: uiautomator2, databaseEnabled: false, desired: {app: F:/Gitcode/AppiumInfosysDem..., appActivity: com.amazon.mShop.splashscre..., automationName: uiautomator2, deviceName: ZF62243G98, newCommandTimeout: 60, platformName: android, platformVersion: 10}, deviceApiLevel: 29, deviceManufacturer: motorola, deviceModel: motorola one power, deviceName: ZF62243G98, deviceScreenDensity: 480, deviceScreenSize: 1080x2246, deviceUDID: ZF62243G98, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 3, platform: LINUX, platformName: LINUX, platformVersion: 10, statBarHeight: 86, takesScreenshot: true, viewportRect: {height: 1930, left: 0, top: 86, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 28f40f2f-cf6e-4a13-9221-1e53ac999570
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:61)
+at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(<generated>)
+at Screen.HomePage.EnterKeywordAndSearchItem(HomePage.java:53)
+at Test.TestFlow.searchItem(TestFlow.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchItem -->
+      </class> <!-- Test.TestFlow -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
