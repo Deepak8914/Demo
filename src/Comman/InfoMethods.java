@@ -7,13 +7,17 @@ import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.touch.offset.PointOption;
 
 public class InfoMethods {
 	
@@ -36,22 +40,29 @@ public class InfoMethods {
 //		 capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,"9");
 //		 capabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"4d9812220805");
 		 capabilities.setCapability(MobileCapabilityType.APP,"F:/Gitcode/AppiumInfosysDemo/Amazon_shopping.apk");
-		 capabilities.setCapability("appActivity","com.amazon.mShop.splashscreen.StartupActivity");
+		capabilities.setCapability("appActivity","com.amazon.mShop.splashscreen.StartupActivity");			 
 		 capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "60");
+		 //for debugging only 
+		//capabilities.setCapability(MobileCapabilityType.NO_RESET, true);
+		//capabilities.setCapability("appWaitPackage","com.amazon.mShop.home.web.MShopWebGatewayActivity");
+		
+		
+		
 		 driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
-		 driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
+		 driver.manage().timeouts().implicitlyWait(80,TimeUnit.SECONDS);
 	}
 	
 	
 	
-	public static void login_flow()
-	{
-		  MobileElement el1 = (MobileElement) driver.findElementById("com.amazon.mShop.android.shopping:id/sign_in_button");
-		  el1.click();
-		 // (new TouchAction(driver)).tap(515,731).perform():
-		
-	    }
-	
+	public static void swipeVeritcal(AppiumDriver<MobileElement> driver,double startPercentage,double finalPercentage,int duration){
+		Dimension size=driver.manage().window().getSize();
+		int width =(int) (size.width/2);
+		int startPoint=(int) (size.getHeight() * startPercentage);
+		int endPoint=(int) (size.getHeight() * finalPercentage);
+
+		new TouchAction(driver).press(PointOption.point(width,startPoint)).waitAction().moveTo(PointOption.point(width,startPoint)).release().perform();
+	}
+
 	
 
 	

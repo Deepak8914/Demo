@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Apr 10 17:43:55 IST 2020</td>
+<td>Started on:</td><td>Tue Apr 14 15:57:31 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>22 seconds (22529 ms)</td>
+<tr><td>Total time:</td><td>139 seconds (139098 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,41 +75,11 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Test.TestFlow.searchItem()'><b>searchItem</b><br>Test class: Test.TestFlow</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: The element &apos;By.xpath: //*[@resource-id=&quot;com.amazon.mShop.android.shopping:id/rs_search_src_text&quot;]&apos; does not exist in DOM anymore
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
-System info: host: &apos;OCSIPL-AKK204&apos;, ip: &apos;192.168.8.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.5&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: F:/Gitcode/AppiumInfosysDem..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: uiautomator2, databaseEnabled: false, desired: {app: F:/Gitcode/AppiumInfosysDem..., appActivity: com.amazon.mShop.splashscre..., automationName: uiautomator2, deviceName: ZF62243G98, newCommandTimeout: 60, platformName: android, platformVersion: 10}, deviceApiLevel: 29, deviceManufacturer: motorola, deviceModel: motorola one power, deviceName: ZF62243G98, deviceScreenDensity: 480, deviceScreenSize: 1080x2246, deviceUDID: ZF62243G98, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 3, platform: LINUX, platformName: LINUX, platformVersion: 10, statBarHeight: 86, takesScreenshot: true, viewportRect: {height: 1930, left: 0, top: 86, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 28f40f2f-cf6e-4a13-9221-1e53ac999570
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
-	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:61)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(&lt;generated&gt;)
-	at Screen.HomePage.EnterKeywordAndSearchItem(HomePage.java:53)
-	at Test.TestFlow.searchItem(TestFlow.java:26)
+<td title='Test.TestFlow.addItemToCard()'><b>addItemToCard</b><br>Test class: Test.TestFlow</td>
+<td><div><pre>java.lang.AssertionError: Failed to click Buy Now button
+	at org.testng.Assert.fail(Assert.java:96)
+	at Screen.ProductDetailsPage.clickBuyNowButton(ProductDetailsPage.java:54)
+	at Test.TestFlow.addItemToCard(TestFlow.java:43)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -135,41 +105,11 @@ Session ID: 28f40f2f-cf6e-4a13-9221-1e53ac999570
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace243596165", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace243596165'><pre>org.openqa.selenium.StaleElementReferenceException: The element &apos;By.xpath: //*[@resource-id=&quot;com.amazon.mShop.android.shopping:id/rs_search_src_text&quot;]&apos; does not exist in DOM anymore
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
-System info: host: &apos;OCSIPL-AKK204&apos;, ip: &apos;192.168.8.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.5&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: F:/Gitcode/AppiumInfosysDem..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: uiautomator2, databaseEnabled: false, desired: {app: F:/Gitcode/AppiumInfosysDem..., appActivity: com.amazon.mShop.splashscre..., automationName: uiautomator2, deviceName: ZF62243G98, newCommandTimeout: 60, platformName: android, platformVersion: 10}, deviceApiLevel: 29, deviceManufacturer: motorola, deviceModel: motorola one power, deviceName: ZF62243G98, deviceScreenDensity: 480, deviceScreenSize: 1080x2246, deviceUDID: ZF62243G98, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 3, platform: LINUX, platformName: LINUX, platformVersion: 10, statBarHeight: 86, takesScreenshot: true, viewportRect: {height: 1930, left: 0, top: 86, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 28f40f2f-cf6e-4a13-9221-1e53ac999570
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
-	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:61)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(&lt;generated&gt;)
-	at Screen.HomePage.EnterKeywordAndSearchItem(HomePage.java:53)
-	at Test.TestFlow.searchItem(TestFlow.java:26)
+</pre></div><a href='#' onClick='toggleBox("stack-trace5934227", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace5934227'><pre>java.lang.AssertionError: Failed to click Buy Now button
+	at org.testng.Assert.fail(Assert.java:96)
+	at Screen.ProductDetailsPage.clickBuyNowButton(ProductDetailsPage.java:54)
+	at Test.TestFlow.addItemToCard(TestFlow.java:43)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -196,8 +136,8 @@ Session ID: 28f40f2f-cf6e-4a13-9221-1e53ac999570
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>12</td>
-<td>Test.TestFlow@78d6692f</td></tr>
+<td>90</td>
+<td>Test.TestFlow@61544ae6</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -207,10 +147,20 @@ Session ID: 28f40f2f-cf6e-4a13-9221-1e53ac999570
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='Test.TestFlow.cardcheckOut()'><b>cardcheckOut</b><br>Test class: Test.TestFlow</td>
+<td></td>
+<td>21</td>
+<td>Test.TestFlow@61544ae6</td></tr>
+<tr>
 <td title='Test.TestFlow.loginflow()'><b>loginflow</b><br>Test class: Test.TestFlow</td>
 <td></td>
 <td>10</td>
-<td>Test.TestFlow@78d6692f</td></tr>
+<td>Test.TestFlow@61544ae6</td></tr>
+<tr>
+<td title='Test.TestFlow.searchItem()'><b>searchItem</b><br>Test class: Test.TestFlow</td>
+<td></td>
+<td>15</td>
+<td>Test.TestFlow@61544ae6</td></tr>
 </table><p>
 </body>
 </html>

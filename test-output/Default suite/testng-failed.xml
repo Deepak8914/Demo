@@ -5,8 +5,8 @@
     <classes>
       <class name="Test.TestFlow">
         <methods>
-          <include name="searchItem"/>
           <include name="loaddatafile"/>
+          <include name="addItemToCard"/>
           <include name="setup"/>
         </methods>
       </class> <!-- Test.TestFlow -->

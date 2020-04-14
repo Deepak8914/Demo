@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\punia\AppData\Local\Temp\testng-eclipse--1941508295\testng-customsuite.xml</span>
+                    <span>C:\Users\punia\AppData\Local\Temp\testng-eclipse-182242816\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test.TestFlow" class="method navigator-link" hash-for-method="searchItem">searchItem</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Test.TestFlow" class="method navigator-link" hash-for-method="addItemToCard">addItemToCard</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -116,7 +116,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Test.TestFlow" class="method navigator-link" hash-for-method="cardcheckOut">cardcheckOut</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="Test.TestFlow" class="method navigator-link" hash-for-method="loginflow">loginflow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Test.TestFlow" class="method navigator-link" hash-for-method="searchItem">searchItem</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -139,43 +149,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="searchItem">
-                  </a> <!-- searchItem -->
-                  <span class="method-name">searchItem</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: The element &apos;By.xpath: //*[@resource-id=&quot;com.amazon.mShop.android.shopping:id/rs_search_src_text&quot;]&apos; does not exist in DOM anymore
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
-System info: host: &apos;OCSIPL-AKK204&apos;, ip: &apos;192.168.8.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.5&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: F:/Gitcode/AppiumInfosysDem..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., automationName: uiautomator2, databaseEnabled: false, desired: {app: F:/Gitcode/AppiumInfosysDem..., appActivity: com.amazon.mShop.splashscre..., automationName: uiautomator2, deviceName: ZF62243G98, newCommandTimeout: 60, platformName: android, platformVersion: 10}, deviceApiLevel: 29, deviceManufacturer: motorola, deviceModel: motorola one power, deviceName: ZF62243G98, deviceScreenDensity: 480, deviceScreenSize: 1080x2246, deviceUDID: ZF62243G98, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 3, platform: LINUX, platformName: LINUX, platformVersion: 10, statBarHeight: 86, takesScreenshot: true, viewportRect: {height: 1930, left: 0, top: 86, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 28f40f2f-cf6e-4a13-9221-1e53ac999570
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
-	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:61)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(&lt;generated&gt;)
-	at Screen.HomePage.EnterKeywordAndSearchItem(HomePage.java:53)
-	at Test.TestFlow.searchItem(TestFlow.java:26)
+                  <a name="addItemToCard">
+                  </a> <!-- addItemToCard -->
+                  <span class="method-name">addItemToCard</span>
+                  <div class="stack-trace">java.lang.AssertionError: Failed to click Buy Now button
+	at org.testng.Assert.fail(Assert.java:96)
+	at Screen.ProductDetailsPage.clickBuyNowButton(ProductDetailsPage.java:54)
+	at Test.TestFlow.addItemToCard(TestFlow.java:43)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -215,9 +195,23 @@ Session ID: 28f40f2f-cf6e-4a13-9221-1e53ac999570
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="cardcheckOut">
+                  </a> <!-- cardcheckOut -->
+                  <span class="method-name">cardcheckOut</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="loginflow">
                   </a> <!-- loginflow -->
                   <span class="method-name">loginflow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchItem">
+                  </a> <!-- searchItem -->
+                  <span class="method-name">searchItem</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -225,7 +219,7 @@ Session ID: 28f40f2f-cf6e-4a13-9221-1e53ac999570
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\punia\AppData\Local\Temp\testng-eclipse--1941508295\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\punia\AppData\Local\Temp\testng-eclipse-182242816\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -274,20 +268,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'searchItem')
+data.setCell(0, 1, 'addItemToCard')
 data.setCell(0, 2, 'Test.TestFlow')
-data.setCell(0, 3, 12459);
+data.setCell(0, 3, 90807);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginflow')
+data.setCell(1, 1, 'cardcheckOut')
 data.setCell(1, 2, 'Test.TestFlow')
-data.setCell(1, 3, 10048);
+data.setCell(1, 3, 21901);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'searchItem')
+data.setCell(2, 2, 'Test.TestFlow')
+data.setCell(2, 3, 15852);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginflow')
+data.setCell(3, 2, 'Test.TestFlow')
+data.setCell(3, 3, 10501);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -320,21 +322,37 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">loaddatafile</span>
-                <span class="method-start">17789 ms</span>
+                <span class="method-start">21107 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginflow</span>
-                <span class="method-start">17789 ms</span>
+                <span class="method-start">21107 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">loaddatafile</span>
-                <span class="method-start">27839 ms</span>
+                <span class="method-start">31613 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchItem</span>
+                <span class="method-start">31613 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">loaddatafile</span>
+                <span class="method-start">47467 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">searchItem</span>
-                <span class="method-start">27840 ms</span>
+                <span class="method-name">addItemToCard</span>
+                <span class="method-start">47468 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">loaddatafile</span>
+                <span class="method-start">138283 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">cardcheckOut</span>
+                <span class="method-start">138285 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
